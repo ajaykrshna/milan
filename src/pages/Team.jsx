@@ -83,9 +83,9 @@ const OCsection = () => {
       </div>
       <div className="tp-oc-head">OVERALL COORDINATOR</div>
       <div className="tp-oc-img">
-        <div className="tp-oc-img-f" />
+        <img src="./assets/team/OC_uwu - Milan Overall Coordinator.jpeg" className="tp-oc-img-f" />
       </div>
-      <div className="tp-oc-name">HARISH M</div>
+      <div className="tp-oc-name">SAI HARISH MADIREDDI</div>
     </section>
   );
 };
@@ -96,7 +96,11 @@ const DomainsDesktop = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x = useTransform(scrollYProgress, [0, 0.7, 1], ["0%", "0%", "-47%"]);
+  const x = useTransform(
+    scrollYProgress,
+    [0, 0.4, 0.7 , 1],
+    ["0%", "0%", "-47%", "-47%"]
+  );
 
   return (
     <div className="tp-domain-space" ref={targetRef}>
@@ -115,7 +119,10 @@ const DomainsDesktop = () => {
             <div className="tp-domain-core-h">CORES</div>
             <div className="tp-domain-core-i">
               <div className="tp-domain-core-i-c">
-                <img src="./assets/team/AdhithT.jpg" className="tp-domain-core-i-c-f"></img>
+                <img
+                  src="./assets/team/AdhithT.jpg"
+                  className="tp-domain-core-i-c-f"
+                ></img>
                 <div className="tp-domain-core-i-c-name">SHRI</div>
               </div>
               <div className="tp-domain-core-i-c">
