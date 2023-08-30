@@ -396,6 +396,14 @@ ion-icon {
   height: 100vh;
 }
 
+.tp-domain-head-w {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+
 .tp-domain-name {
   margin-top: -10vh;
   font-size: 4rem;
@@ -433,6 +441,7 @@ ion-icon {
   height: 300px;
   background: #390035;
   margin-top: 6vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .tp-domain-head-name {
@@ -441,6 +450,8 @@ ion-icon {
   font-family: "Amboy";
   font-weight: 600;
   margin-top: 3vh;
+  max-width: min-content;
+  
 }
 
 .tp-domain-core {
@@ -482,6 +493,7 @@ ion-icon {
   width: 230px;
   height: 230px;
   background: #390035;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .tp-domain-core-i-c-name {
@@ -492,14 +504,7 @@ ion-icon {
   margin-top: 3vh;
 }
 
-@media only screen and (max-width: 768px){
-  .tp-oc-head{
-    font-size: 3rem;
-  }
-  .tp-oc-name{
-    font-size: 2rem;
-  }
-}
+
 
 
 
@@ -632,4 +637,106 @@ ion-icon {
   background: #ffd1a8;
   transform: translateY(-3.5px) rotate(-45deg);
   border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 768px){
+  .tp-oc {
+    height: 100vh;
+  }
+  .tp-oc-head{
+    font-size: 2.7rem;
+    padding: 10px 20px;
+    width: min-content;
+    text-align: center;
+    line-height: 2.8rem;
+    margin-top: 8vh;
+  }
+
+  .tp-oc-img img {
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .tp-oc-name{
+    font-size: 2rem;
+  }
+
+  .tp-logo img {
+    width: 100px;
+    margin-top: 3vh;
+  }
+
+  .hamburger {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ham-rec1 {
+    width: 36px;
+    height: 6px;
+  }
+
+  .tp-domain-space {
+    height: 100vh;
+  }
+
+  .tp-domain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vh;
+    margin-bottom: 0;
+  }
+
+  .tp-domain-head {
+    margin-top: 10vh;
+    text-align: center;
+    height: min-content;
+  }
+
+  .tp-domain-name {
+    font-size: 3rem;
+    width: min-content;
+    padding: 10px 20px;
+  }
+
+  .tp-domain-head-h {
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+
+  .tp-domain-core {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+  }
+
+  .tp-domain-core-h {
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+
+  .tp-domain-core-i-c-name {
+    text-align: center;
+  }
+
+  .tp-domain-core-i {
+    gap: 2vh;
+  }
+
+  .tp-domain-head-name {
+    font-size: 2rem;
+  }
+
+  .tp-domain-head-f {
+    width: 250px;
+    height: 250px;
+  }
+
+  .team-page > div:nth-child(4) .tp-domain-name {
+    font-size: 1rem;
+  }
 }
