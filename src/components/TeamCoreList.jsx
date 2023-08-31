@@ -32,7 +32,7 @@ export default [
   },
   {
     dom: "Finance",
-    heads: ["./assets/team/Bommineni Vishwajith Reddy.jpeg"],
+    heads: ["./assets/team/Bommineni Vishwajith Reddy.jpg"],
     cores: [
       "./assets/team/Rakesh Varshith.jpeg",
       "./assets/team/Manikanta Varun Varma Nadimpalli.jpeg",
@@ -91,7 +91,7 @@ export default [
       "./assets/team/Dasari Neha vijetha.jpg",
       "./assets/team/Pasupuleti Ishwarya.jpg",
       "./assets/team/Padala Sai Kowshik.jpg",
-      "./assets/team/Chunarkar Sumeeth.jpg",
+      "./assets/team/Chunarkar Sumeeth Kumar.jpg",
       "./assets/team/Rama Jayathi.jpg",
       "./assets/team/Mudavath Vikeath.jpg",
     ],

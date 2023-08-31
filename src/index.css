@@ -282,6 +282,9 @@ ion-icon {
   font-size: 3rem;
 }
 
+
+/* SWIPER MOTION */
+
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -451,7 +454,6 @@ ion-icon {
   font-weight: 600;
   margin-top: 3vh;
   max-width: min-content;
-  
 }
 
 .tp-domain-core {
@@ -504,10 +506,6 @@ ion-icon {
   margin-top: 3vh;
 }
 
-
-
-
-
 /* NAVBAR */
 
 .navbar {
@@ -518,7 +516,7 @@ ion-icon {
   background: rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(4px);
   transition: 0.5s;
-  z-index: 998 ;
+  z-index: 998;
 }
 
 .navbar-options {
@@ -558,7 +556,6 @@ ion-icon {
   border-radius: 15px;
   cursor: default;
 }
-
 
 .navbar-pending:hover {
   background: #390035;
@@ -639,12 +636,11 @@ ion-icon {
   border-radius: 10px;
 }
 
-
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px) {
   .tp-oc {
     height: 100vh;
   }
-  .tp-oc-head{
+  .tp-oc-head {
     font-size: 2.7rem;
     padding: 10px 20px;
     width: min-content;
@@ -658,7 +654,7 @@ ion-icon {
     height: 300px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  .tp-oc-name{
+  .tp-oc-name {
     font-size: 2rem;
   }
 
@@ -739,4 +735,209 @@ ion-icon {
   .team-page > div:nth-child(4) .tp-domain-name {
     font-size: 1rem;
   }
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar-options {
+    width: 100vw;
+    padding: 10vh 0;
+    position: absolute;
+    gap: 8vh;
+    justify-content: center;
+  }
+  .navbar-pending {
+    font-size: 2rem;
+  }
+
+  .navbar-active {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-top {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+  }
+  .main-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-head-img img {
+    width: 180px;
+    margin-bottom: 5vh;
+  }
+  .main-head-text h1 {
+    font-size: 5.5rem;
+  }
+
+  .main-head-text h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .main-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .main-mid-text-head h2 {
+    font-size: 2rem;
+  }
+
+  .main-mid-text-desc {
+    width: 90vw;
+  }
+
+  .main-mid-text-desc p {
+    font-size: 1.3rem;
+  }
+
+  .main-mid-carousel img {
+    width: 50vw;
+    margin-top: 5vh;
+  }
+
+  .main-ovr {
+    height: 70vh;
+  }
+
+  .main-ovr-head p {
+    font-size: 1.6rem;
+    padding: 20px 30px;
+  }
+  .main-ovr-subhead1 p {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+  }
+
+  .main-ovr-stat {
+    width: 70vw;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+.main-pic {
+  height: 50vh;
+}
+/* SWIPER MOTION */
+
+.swiper {
+  width: 100%;
+  padding-top: 2vh;
+  padding-bottom: 35px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 25vh;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 190%;
+  border-radius: 15px;
+  position: relative;
+  right: 45%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #700035;
+}
+.swiper-pagination-bullet {
+  background-color: #a11a2b;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.mySwiper .swiper-slide:not(.swiper-slide-active) img {
+  opacity: 0.6;
+  mix-blend-mode: multiply;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 4vh;
+  margin-bottom: 5vh;
+  height: max-content;
+}
+
+.footer-img img {
+  width: 100px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.footer-links-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links-location {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links h3 {
+  color: #390035;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.footer-links p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #a11a2b;
+  text-align: center;
+}
+.footer-links a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #a11a2b;
+}
+
+.footer-links-follow-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+ion-icon {
+  color: #a11a2b;
+  font-size: 3rem;
+}
 }
