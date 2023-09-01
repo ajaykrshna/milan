@@ -44,9 +44,11 @@ const Team = () => {
               <div className="ham-rec1"></div>
             </div>
           )}
-          <OCsection />
-          <TeamListDivDesktop />
-          {/* <DomainsDesktop /> */}
+          <>
+            <OCsection />
+            <TeamListDivDesktop />
+            {/* <DomainsDesktop /> */}
+          </>
         </div>
       ) : (
         <div className="team-page">
@@ -242,18 +244,18 @@ const teamListDivMobile = TeamCoreList.map((item, index) => {
   });
 
   return (
-      <section className="tp-domain">
-          <div className="tp-domain-head">
-            <div className="tp-domain-name">{item.dom.toUpperCase()}</div>
-            <div className="tp-domain-head-h">HEADS</div>
-            {heads}
-          </div>
-          <div className="tp-domain-core">
-            {/* <div className="tp-domain-name">{item.dom.toUpperCase()}</div> */}
-            <div className="tp-domain-core-h">CORES</div>
-            <div className="tp-domain-core-i">{cores}</div>
-          </div>
-      </section>
+    <section className="tp-domain">
+      <div className="tp-domain-head">
+        <div className="tp-domain-name">{item.dom.toUpperCase()}</div>
+        <div className="tp-domain-head-h">HEADS</div>
+        {heads}
+      </div>
+      <div className="tp-domain-core">
+        {/* <div className="tp-domain-name">{item.dom.toUpperCase()}</div> */}
+        <div className="tp-domain-core-h">CORES</div>
+        <div className="tp-domain-core-i">{cores}</div>
+      </div>
+    </section>
   );
 });
 
