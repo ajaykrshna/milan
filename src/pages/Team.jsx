@@ -29,7 +29,7 @@ const Team = () => {
     <>
       {windowSize[0] > 1200 ? (
         <div className="team-page">
-          {showNav ? (
+          {/* {showNav ? (
             <>
               <div className="close-btn" onClick={() => setShowNav(false)}>
                 <div className="close-line-1"></div>
@@ -43,7 +43,7 @@ const Team = () => {
               <div className="ham-rec1"></div>
               <div className="ham-rec1"></div>
             </div>
-          )}
+          )} */}
           <>
             <OCsection />
             <TeamListDivDesktop />
@@ -52,7 +52,7 @@ const Team = () => {
         </div>
       ) : (
         <div className="team-page">
-          {showNav ? (
+          {/* {showNav ? (
             <>
               <div className="close-btn" onClick={() => setShowNav(false)}>
                 <div className="close-line-1"></div>
@@ -66,7 +66,7 @@ const Team = () => {
               <div className="ham-rec1"></div>
               <div className="ham-rec1"></div>
             </div>
-          )}
+          )} */}
           <OCsection />
           {/* <DomainsMobile2 /> */}
           {teamListDivMobile}

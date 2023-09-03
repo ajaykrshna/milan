@@ -155,7 +155,7 @@
 .main-mid-text-head h2 {
   font-size: 3.3rem;
   color: #ffd1a8;
-  font-family: "OctoberDevanagari";
+  font-family: "ArianaPro";
   letter-spacing: 0.1rem;
   font-weight: 400;
 }
@@ -163,7 +163,7 @@
 .main-mid-text-desc p {
   font-size: 2rem;
   color: #ffd1a8;
-  font-family: "OctoberDevanagari";
+  font-family: "ArianaPro";
   margin-top: 45px;
 }
 
@@ -185,6 +185,7 @@
   color: #ffd1a8;
   padding: 4vh 3vw;
   font-size: 2.6rem;
+  font-family: "ArianaPro";
   border-radius: 2rem;
 }
 
@@ -202,14 +203,15 @@
   font-size: 2.3rem;
   border-radius: 2rem;
   cursor: pointer;
+  font-family: "ArianaPro";
   user-select: none;
 }
 
 .main-ovr-stat {
-  height: 40vh;
+  height: 55vh;
   background-color: #ffd1a8;
   margin-top: 3vw;
-  width: 50vw;
+  width: 80vw;
   border-radius: 2rem;
   text-align: center;
 }
@@ -326,8 +328,11 @@ ion-icon {
 .team-page {
   display: flex;
   flex-direction: column;
-  background: #ffd1a8;
+  background: url("./assets/bg-vectors/team-bg.svg");
+  background: #ffd1a8 url("./assets/bg-vectors/team-bg.svg");
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .tp-oc {
@@ -514,12 +519,19 @@ ion-icon {
 .navbar {
   position: absolute;
   display: flex;
+  flex-direction: row;
   width: 100vw;
   height: 100vh;
+  /* background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(4px); */
+  z-index: 998;
+}
+
+.navbar-blur{
+  flex-grow: 1;
   background: rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(4px);
-  transition: 0.5s;
-  z-index: 998;
+  transition: 1s;
 }
 
 .navbar-options {
@@ -640,6 +652,10 @@ ion-icon {
 }
 
 @media only screen and (max-width: 1000px) {
+
+  .team-page {
+    background-clip: inherit;
+  }
   .tp-oc {
     height: 100vh;
   }
@@ -827,7 +843,7 @@ ion-icon {
   }
 
   .main-ovr {
-    height: 70vh;
+    height: 75vh;
   }
 
   .main-ovr-head p {
@@ -998,4 +1014,23 @@ ion-icon {
     transform: translateY(-3.5px) rotate(-45deg);
     border-radius: 10px;
   }
+}
+
+.home-leaderboard-chart {
+  width: 95%;
+  height: 95%;
+  padding: 14px;
+}
+
+.blockrace {
+  width: 100%;
+  height: 100%;
+}
+
+.blockrace iframe {
+  height: 100%;
+}
+
+.blockrace div {
+  height: 100%;
 }

@@ -4,27 +4,14 @@ import Navbar from "../components/Navbar";
 import BlockRace from "../components/BlockRace";
 import Footer from "../components/Footer";
 import Hamburger from "../components/Hamburger";
+import {OverallScores} from "../components/OvrLeaderboard";
 
 const Home = () => {
   const [raceGraph, setRaceGraph] = useState(true);
   const [showNav, setShowNav] = useState(false);
   return (
     <>
-      {showNav ? (
-        <>
-          <div className="close-btn" onClick={() => setShowNav(false)}>
-            <div className="close-line-1"></div>
-            <div className="close-line-2"></div>
-          </div>
-          <Navbar />
-        </>
-      ) : (
-        <div className="hamburger" onClick={() => setShowNav(true)}>
-          <div className="ham-rec1"></div>
-          <div className="ham-rec1"></div>
-          <div className="ham-rec1"></div>
-        </div>
-      )}
+      
       <div className="main">
         <div className="main-bg">
           <div className="main-bg-vector">
@@ -83,7 +70,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="main-ovr-stat">
-                {raceGraph ? <LeaderBoard /> : <BlockRace />}
+                {raceGraph ? <OverallScores /> : <BlockRace />}
               </div>
             </section>
             <section className="main-pic">
@@ -98,7 +85,3 @@ const Home = () => {
 }
 
 export default Home;
-
-const LeaderBoard = () => {
-  return <div className="leaderboard">leaderboard</div>;
-};
